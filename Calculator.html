@@ -1,0 +1,192 @@
+<html>
+  <head>
+<link rel="icon" href="calculatorfavicon.ico" type="image/x-icon">
+ <link rel="shortcut icon" href="calculatorfavicon.ico" type="image/x-icon" />
+    <title>Calculator</title>
+<style>
+body {
+  text-align:center;
+  background-color:#1A237E;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Cg fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath opacity=".5" d="M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z"/%3E%3Cpath d="M6 5V0H5v5H0v1h5v94h1V6h94V5H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+h1 {
+  color:white;
+}
+div {
+  color:white;
+}
+
+#firstnum {
+  background-color:lightblue;
+  height:30px;
+  width: 260px;
+  color:darkblue;
+  border: solid 3px grey;
+  margin-left:10px;
+  font-size:30px;
+}
+
+#secondnum {
+  background-color:lightblue;
+  height:30px;
+  width: 260px;
+  color:darkblue;
+  border: solid 3px grey;
+  margin-left:10px;
+  font-size:30px;
+
+}
+#add{
+  height:55px;
+  width:60px;
+  cursor:pointer;
+  background-color:#1B5E20;
+  border:0px;
+  color:white;
+  margin-left:87px;
+  box-shadow:5px 5px black;
+  border-right:2px solid lightgreen;
+}
+#add:hover {
+  background-color:#2E7D32;
+}
+
+#subtract{
+  height:55px;
+  width:60px;
+  cursor:pointer;
+  background-color:#1B5E20;
+  border:0px;
+  color:white;
+  box-shadow:5px 5px black;
+  border-right:2px solid lightgreen;
+  
+}
+#subtract:hover {
+  background-color:#2E7D32;
+}
+
+#multiply{
+  height:55px;
+  width:60px;
+  cursor:pointer;
+  background-color:#1B5E20;
+  border:0px;
+  color:white;
+  box-shadow:5px 5px black;
+  border-right:2px solid lightgreen;
+  
+}
+#multiply:hover {
+  background-color:#2E7D32;
+}
+
+#divide{
+  height:55px;
+  width:60px;
+  cursor:pointer;
+  background-color:#1B5E20;
+  border:0px;
+  color:white;
+  box-shadow:5px 5px black;
+  border-right:2px solid lightgreen;
+  
+}
+#divide:hover {
+  background-color:#2E7D32;
+}
+span {
+  font-weight:bold;
+  color:#FF8A80;
+  font-size:25px;
+}
+hr{
+  border:5px dashed #90CAF9;
+}
+
+#cancel{
+  height:40px;
+  width:85px;
+  background-color: #303F9F;
+  color:white;
+  cursor:pointer;
+}
+#cancel:hover{
+  background-color:#3F51B5;
+}
+</style>
+
+  </head>
+<body>
+  <h1>Calculator</h1>
+  <div>
+    Number 1:  
+    <input id="firstnum" class="ibox" type="number"></div>
+  <div>
+  Number 2:  
+    <input id="secondnum" class="ibox" type="number">
+    <br>
+    <br>
+    <span>
+    <button id="add" onclick="addition()">Add</button> <button id="subtract" onclick="subtraction()">Subtract</button>
+  </span>
+    <br>
+    <br>
+      <span>
+    <button id="multiply" onclick="multiplication()">Multiply</button>
+       <button id="divide" onclick="division()">Divide</button>
+       
+      </span>
+    <br>
+    <br>
+    <br>
+    <button id="cancel" onclick="cancel()">Cancel</button>
+    <br><br>
+    <hr>
+    <p> This is my <span><u>first</u></span> calculator ever! So please don't judge it.</p>
+<hr>
+<script>
+function addition() {
+  var result=    Number(document.getElementById("firstnum").value)+
+ Number(document.getElementById("secondnum").value)
+  
+  window.alert("Sum is : "+result);
+}
+
+function subtraction() {
+  var result1=    Number(document.getElementById("firstnum").value)-
+ Number(document.getElementById("secondnum").value)
+  
+  window.alert("Difference is : "+result1);
+}
+
+function multiplication() {
+  var result2=    Number(document.getElementById("firstnum").value)*
+ Number(document.getElementById("secondnum").value)
+  
+  window.alert("Product is : "+result2);
+}
+
+function division() {
+  var result3=    Number(document.getElementById("firstnum").value)/
+ Number(document.getElementById("secondnum").value)
+  
+  window.alert("Quotient is : "+result3);
+}
+
+function cancel() {
+   document.getElementById("firstnum").value=0;
+ document.getElementById("secondnum").value=0;
+  
+ 
+}
+
+
+
+</script>
+    
+  </body>
+</html>
+
+
+
